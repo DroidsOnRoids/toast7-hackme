@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hackme</string>
+    <string name="question">Question %1$d.</string>
+    <string name="wrong_answer">Sorry, try again…</string>
+    <string name="correct_answer">Hurray</string>
+    <string name="finish">Congrats, you win</string>
+</resources>
