@@ -25,7 +25,6 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		questions = new Question[]{
 				new JavaHardcodedQuestion(),
-				new CharArrayQuestion(),
 				new AssetQuestion(this),
 				new HashedQuestion(),
 				new NativeHardcodedQuestion(),};

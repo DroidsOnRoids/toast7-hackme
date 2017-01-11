@@ -7,8 +7,8 @@ android {
 		applicationId "pl.droidsonroids.hackme"
 		minSdkVersion 19
 		targetSdkVersion 25
-		versionCode 1
-		versionName "1.0"
+		versionCode 2
+		versionName "1.1"
 		externalNativeBuild {
 			cmake {
 				cFlags "-O4"

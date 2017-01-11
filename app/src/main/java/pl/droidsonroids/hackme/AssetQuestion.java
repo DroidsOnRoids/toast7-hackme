@@ -10,10 +10,10 @@ import java.nio.charset.StandardCharsets;
 
 import io.reactivex.Observable;
 
-public class AssetQuestion implements Question {
+class AssetQuestion implements Question {
 	private final AssetManager assetManager;
 
-	public AssetQuestion(Context context) {
+	AssetQuestion(Context context) {
 		assetManager = context.getAssets();
 	}
 

@@ -1,6 +1,6 @@
 package pl.droidsonroids.hackme;
 
-public final class Utils {
+final class Utils {
 	static {
 		System.loadLibrary("native-lib");
 	}
