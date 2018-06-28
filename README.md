@@ -7,8 +7,6 @@ Hackme application for Toast #7
 1. Android NDK
 1. CMake
 1. JDK
-1. [jadx-gui](https://github.com/skylot/jadx)
-1. [apktool](https://ibotpeaches.github.io/Apktool/)
 
 ## Reverse engineering tools
 1. [apktool](https://ibotpeaches.github.io/Apktool/)
