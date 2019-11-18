@@ -1,17 +1,19 @@
 #include <jni.h>
 #include <string.h>
+#include <stdbool.h>
 
 #define CORRECT_ANSWER "donut"
-#define CORRECT_ANSWER_SIZE sizeof(CORRECT_ANSWER)
 
 JNIEXPORT jboolean JNICALL
 Java_pl_droidsonroids_hackme_Utils_isAnswerCorrect(JNIEnv *env, jclass type, jstring answer_) {
-	char answer[CORRECT_ANSWER_SIZE + 1];
-	(*env)->GetStringUTFRegion(env, answer_, 0, CORRECT_ANSWER_SIZE + 1, answer);
 
-	if (strcmp(answer, CORRECT_ANSWER) == 0) {
-		return JNI_TRUE;
-	} else {
-		return JNI_FALSE;
-	}
+    const char *nativeString = (*env)->GetStringUTFChars(env, answer_, 0);
+    const bool same = strcmp(CORRECT_ANSWER, nativeString) == 0;
+    (*env)->ReleaseStringUTFChars(env, answer_, nativeString);
+    if (same) {
+        return JNI_TRUE;
+    } else {
+        return JNI_FALSE;
+    }
 }
+
